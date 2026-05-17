@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <rect width="32" height="32" rx="8" fill="#080C14"/>
+  <rect x="2" y="2" width="28" height="28" rx="7" fill="none" stroke="#6C63FF" stroke-width="1" opacity="0.4"/>
+  <!-- M shape stylized -->
+  <path d="M6 22 L6 10 L11 17 L16 10 L16 22" stroke="#6C63FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- bar chart lines -->
+  <rect x="19" y="16" width="2.5" height="6" rx="1" fill="#00D4FF" opacity="0.9"/>
+  <rect x="23" y="13" width="2.5" height="9" rx="1" fill="#6C63FF" opacity="0.9"/>
+  <!-- pulse dot -->
+  <circle cx="27" cy="9" r="2" fill="#6C63FF"/>
+  <circle cx="27" cy="9" r="2" fill="#6C63FF" opacity="0.4">
+    <animate attributeName="r" values="2;4;2" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0;0.4" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>
