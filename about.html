@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MARKLYTICS · О проекте — Архитектура и команда</title>
+<meta name="description" content="Авторы, методология, технологии и источники проекта Marklytics. ИКТ, НАО «Университет Нархоз», 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Barlow+Condensed:wght@300;500;700&family=Karla:wght@300;400;600&family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loader">
+  <div class="brand">MARKLYTICS</div>
+  <div class="sub">Loading · About</div>
+  <div class="bar"></div>
+</div>
+
+<div id="cursor-dot"></div>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand-logo">MARK<span class="pro">LYTICS</span><span class="dot"></span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="analytics.html">Аналитика</a></li>
+      <li><a href="dashboard.html">Дашборд</a></li>
+      <li><a href="ai-agent.html">AI-ассистент</a></li>
+      <li><a href="about.html" class="active">О проекте</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO NARROW -->
+  <section class="section section-narrow reveal" style="padding-top:140px;">
+    <div class="section-label">Глава 04 · Архитектура</div>
+    <h1 class="section-title">Как мы <em>собрали</em> Marklytics.</h1>
+    <p class="section-sub">Проект разрабатывался поэтапно: от исследования темы до AI-генерации каждого ассета. Ниже — таймлайн работы, технологический стек, команда и источники данных.</p>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="section reveal">
+    <div class="section-label">Этапы</div>
+    <h2 class="section-title">Дорожная <em>карта</em></h2>
+
+    <div class="timeline">
+      <div class="timeline-step">
+        <h4>Исследование темы</h4>
+        <p>Выбор темы №15 из перечня ИКТ-проектов. Обзор индустрии: Hootsuite Social Media Trends 2025, We Are Social Digital Report, бенчмарки eMarketer и Sprout Social. Формулировка тезисов и структуры лендинга.</p>
+      </div>
+      <div class="timeline-step">
+        <h4>Сбор и подготовка данных</h4>
+        <p>Сформирован собственный датасет из 15 рекламных кампаний 2024-2025 на 5 платформах. Метрики: бюджет, охват, CTR, конверсии, ROAS. Данные нормализованы, согласованы с руководителем за неделю до защиты.</p>
+      </div>
+      <div class="timeline-step">
+        <h4>Дизайн-система</h4>
+        <p>Концепция «data warroom»: cyan + magenta на тёмном фоне (#0A0F1E). Шрифты: Playfair Display, Barlow Condensed, Karla, Fira Code. Курсор — trail-particles как метафора engagement events.</p>
+      </div>
+      <div class="timeline-step">
+        <h4>AI-генерация ассетов</h4>
+        <p>Все визуальные материалы созданы нейросетями: Google Gemini (5 hero/galllery картинок), HeyGen (видео-аватар аналитика), Suno AI (фоновая дорожка «Signal Pulse»). AI-чат — Tidio AI Reply Assistant.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HEX GRID — Tech Stack -->
+  <section class="section reveal">
+    <div class="section-label">Стек технологий</div>
+    <h2 class="section-title">Чем <em>построено</em></h2>
+
+    <div class="hex-grid">
+      <div class="hex"><div class="hex-ico">&lt;/&gt;</div><div class="hex-name">HTML5</div></div>
+      <div class="hex"><div class="hex-ico">{ }</div><div class="hex-name">CSS3</div></div>
+      <div class="hex"><div class="hex-ico">JS</div><div class="hex-name">JavaScript</div></div>
+      <div class="hex"><div class="hex-ico">▲</div><div class="hex-name">Chart.js</div></div>
+      <div class="hex"><div class="hex-ico">◉</div><div class="hex-name">Tidio AI</div></div>
+      <div class="hex"><div class="hex-ico">♪</div><div class="hex-name">Suno AI</div></div>
+      <div class="hex"><div class="hex-ico">✦</div><div class="hex-name">Google Gemini</div></div>
+      <div class="hex"><div class="hex-ico">▶</div><div class="hex-name">HeyGen</div></div>
+      <div class="hex"><div class="hex-ico">⌬</div><div class="hex-name">OnSpace</div></div>
+      <div class="hex"><div class="hex-ico">⚡</div><div class="hex-name">Higgsfield</div></div>
+    </div>
+  </section>
+
+  <!-- AUTHORS -->
+  <section class="section reveal">
+    <div class="section-label">Команда</div>
+    <h2 class="section-title">Авторы <em>проекта</em></h2>
+
+    <div class="authors-grid">
+      <div class="author-card">
+        <div class="author-avatar">ТМ</div>
+        <div class="info">
+          <h4>Титова Маргарита</h4>
+          <div class="role">Дизайн · Контент · Исследование</div>
+          <div class="bio">Образовательная программа 6В06104 — Digital Management and Design, 1 курс. НАО «Университет Нархоз», Школа цифровых технологий.</div>
+        </div>
+      </div>
+      <div class="author-card">
+        <div class="author-avatar">ОН</div>
+        <div class="info">
+          <h4>Отепберген Нурайым</h4>
+          <div class="role">Аналитика · Данные · AI-ассеты</div>
+          <div class="bio">Образовательная программа 6В06104 — Digital Management and Design, 1 курс. НАО «Университет Нархоз», Школа цифровых технологий.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="metric-row" style="margin-top:2rem; max-width:680px;">
+      <div class="label">Руководитель проекта</div>
+      <div class="value" style="font-size:1.15rem;">ст. преп. Мухамеджанова Г.С.</div>
+      <div class="meta">Школа цифровых технологий · Дисциплина: ИКТ — Информационно-коммуникационные технологии</div>
+    </div>
+  </section>
+
+  <!-- DATA SOURCES -->
+  <section class="section reveal">
+    <div class="section-label">Источники данных</div>
+    <h2 class="section-title">Где мы <em>читали</em></h2>
+    <p class="section-sub">Бенчмарки, на которые опирались при формировании датасета и интерпретации метрик.</p>
+
+    <div class="sources-term">
+      <ol>
+        <li>Hootsuite <span class="arrow">→</span> <a class="link" href="https://www.hootsuite.com/research/social-trends" target="_blank" rel="noopener">Social Media Trends Report 2025</a></li>
+        <li>We Are Social <span class="arrow">→</span> <a class="link" href="https://wearesocial.com/digital-2025" target="_blank" rel="noopener">Digital 2025 Global Overview</a></li>
+        <li>Statista <span class="arrow">→</span> <a class="link" href="https://www.statista.com/markets/424/topic/540/social-media-user-generated-content/" target="_blank" rel="noopener">Social Media Advertising Spending</a></li>
+        <li>Meta for Business <span class="arrow">→</span> <a class="link" href="https://www.facebook.com/business/insights" target="_blank" rel="noopener">Meta Business Insights</a></li>
+        <li>TikTok Ads <span class="arrow">→</span> <a class="link" href="https://ads.tiktok.com/business/creativecenter" target="_blank" rel="noopener">TikTok Creative Center · Benchmarks</a></li>
+        <li>Sprout Social <span class="arrow">→</span> <a class="link" href="https://sproutsocial.com/insights/" target="_blank" rel="noopener">Sprout Social Index</a></li>
+        <li>eMarketer <span class="arrow">→</span> <a class="link" href="https://www.emarketer.com/" target="_blank" rel="noopener">eMarketer Social Commerce Forecast 2025</a></li>
+        <li>HubSpot Research <span class="arrow">→</span> <a class="link" href="https://www.hubspot.com/marketing-statistics" target="_blank" rel="noopener">Marketing Statistics 2025</a></li>
+        <li>GlobalWebIndex <span class="arrow">→</span> <a class="link" href="https://www.gwi.com/reports" target="_blank" rel="noopener">GWI Social Media Report</a></li>
+        <li>Buffer <span class="arrow">→</span> <a class="link" href="https://buffer.com/state-of-social" target="_blank" rel="noopener">State of Social 2025</a></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section class="section section-narrow reveal">
+    <div class="section-label">Связь</div>
+    <h2 class="section-title">Написать <em>команде</em></h2>
+    <p class="section-sub">Демо-форма для презентации. В продакшене подключается к Formspree / Tally / собственному API.</p>
+
+    <form class="contact-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Отправлено ✓';">
+      <div class="field">
+        <input type="text" id="f-name" placeholder=" " required>
+        <label for="f-name">Имя</label>
+      </div>
+      <div class="field">
+        <input type="email" id="f-email" placeholder=" " required>
+        <label for="f-email">E-mail</label>
+      </div>
+      <div class="field">
+        <textarea id="f-message" placeholder=" " required></textarea>
+        <label for="f-message">Сообщение</label>
+      </div>
+      <button type="submit" class="btn" style="align-self:flex-start;">Отправить</button>
+    </form>
+  </section>
+
+</main>
+
+<button id="back-top" aria-label="Наверх">↑</button>
+
+<div id="player">
+  <div class="track-info">
+    <span class="note">♪</span> Signal Pulse <span class="sub">· Suno AI</span>
+  </div>
+  <div class="progress" id="progress"><div class="progress-fill" id="progress-fill"></div></div>
+  <div class="time" id="time">0:00 / 0:00</div>
+  <div class="controls">
+    <button id="play-btn" aria-label="Воспроизвести">▶</button>
+  </div>
+  <audio id="bg-audio" src="assets/signal-pulse.mp3" preload="metadata" loop></audio>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="brand-logo">MARK<span class="pro">LYTICS</span><span class="dot"></span></a>
+      <p>Data warroom для маркетинговой аналитики соцсетей. ИКТ-проект НАО «Университет Нархоз», Школа цифровых технологий.</p>
+    </div>
+    <div class="footer-info">
+      <div>
+        <h5>Навигация</h5>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="analytics.html">Аналитика</a></li>
+          <li><a href="dashboard.html">Дашборд</a></li>
+          <li><a href="ai-agent.html">AI-ассистент</a></li>
+          <li><a href="about.html">О проекте</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Авторы</h5>
+        <p>Титова Маргарита<br>Отепберген Нурайым<br><br>6В06104 · Digital Management and Design · 1 курс<br>Рук.: ст. преп. Мухамеджанова Г.С.</p>
+      </div>
+    </div>
+    <div class="footer-meta">
+      ИКТ · 2026<br>
+      Школа цифровых технологий<br>
+      НАО «Университет Нархоз»<br>
+      <span class="copy">© 2026</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
