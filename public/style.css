@@ -381,7 +381,7 @@ main{ padding-top:70px; }
 }
 .hero-bg{
   position:absolute; inset:0;
-  background:url('assets/hero-warroom.png') center/cover no-repeat;
+  background:url('https://cdn.jsdelivr.net/gh/yesuke3x/Marklytics@assets-cdn/hero-warroom.png') center/cover no-repeat;
   z-index:-1;
   will-change:transform;
 }
