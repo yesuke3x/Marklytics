@@ -199,13 +199,15 @@ body::after{
    HEADER / NAV
    ============================================ */
 .site-header{
-  position:fixed; top:56px; left:0; right:0; /* +56px under OnSpace top banner */
-  height:70px; z-index:1000;
-  background:rgba(10,15,30,0.92);
-  backdrop-filter:blur(24px) saturate(180%);
-  -webkit-backdrop-filter:blur(24px) saturate(180%);
-  border-bottom:1px solid rgba(0,212,255,0.18);
-  box-shadow:0 8px 32px rgba(0,0,0,0.55);
+  position:fixed; top:88px; left:0; right:0; /* clear of OnSpace top banner (~70-80px) */
+  height:64px; z-index:2147483646; /* above OnSpace overlays just in case */
+  background:#0A0F1E;               /* fully opaque so nothing bleeds through */
+  border-top:2px solid var(--cyan);
+  border-bottom:1px solid rgba(255,45,120,0.4);
+  box-shadow:
+    0 0 0 1px rgba(0,212,255,0.25),
+    0 12px 36px rgba(0,0,0,0.7),
+    0 0 24px rgba(0,212,255,0.15);
   display:flex; align-items:center;
 }
 .nav{
@@ -288,8 +290,8 @@ body::after{
 @media(max-width:768px){
   .hamburger{ display:block; }
   .nav-links{
-    position:fixed; top:126px; left:0; right:0; /* OnSpace banner + header */
-    background:rgba(10,15,30,0.97);
+    position:fixed; top:152px; left:0; right:0; /* OnSpace banner (88) + header (64) */
+    background:rgba(10,15,30,0.98);
     backdrop-filter:blur(20px);
     flex-direction:column;
     padding:32px;
@@ -304,7 +306,7 @@ body::after{
 /* ============================================
    GENERAL LAYOUT
    ============================================ */
-main{ padding-top:126px; } /* OnSpace banner (56) + header (70) */
+main{ padding-top:152px; } /* OnSpace banner (88) + header (64) */
 
 .section{
   padding:120px 32px;
