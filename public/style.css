@@ -199,9 +199,9 @@ body::after{
    HEADER / NAV
    ============================================ */
 .site-header{
-  position:fixed; top:88px; left:0; right:0; /* clear of OnSpace top banner (~70-80px) */
-  height:64px; z-index:2147483646; /* above OnSpace overlays just in case */
-  background:#0A0F1E;               /* fully opaque so nothing bleeds through */
+  position:fixed; top:0; left:0; right:0;
+  height:64px; z-index:2147483646;
+  background:#0A0F1E;
   border-top:2px solid var(--cyan);
   border-bottom:1px solid rgba(255,45,120,0.4);
   box-shadow:
@@ -210,6 +210,8 @@ body::after{
     0 0 24px rgba(0,212,255,0.15);
   display:flex; align-items:center;
 }
+/* Home page only — push under OnSpace promo banner */
+body.home-page .site-header{ top:88px; }
 .nav{
   width:100%; max-width:1400px;
   margin:0 auto;
@@ -290,7 +292,7 @@ body::after{
 @media(max-width:768px){
   .hamburger{ display:block; }
   .nav-links{
-    position:fixed; top:152px; left:0; right:0; /* OnSpace banner (88) + header (64) */
+    position:fixed; top:64px; left:0; right:0;
     background:rgba(10,15,30,0.98);
     backdrop-filter:blur(20px);
     flex-direction:column;
@@ -306,7 +308,11 @@ body::after{
 /* ============================================
    GENERAL LAYOUT
    ============================================ */
-main{ padding-top:152px; } /* OnSpace banner (88) + header (64) */
+main{ padding-top:64px; } /* default = header height */
+body.home-page main{ padding-top:152px; } /* OnSpace banner (88) + header (64) */
+@media(max-width:768px){
+  body.home-page .nav-links{ top:152px; }
+}
 
 .section{
   padding:120px 32px;
